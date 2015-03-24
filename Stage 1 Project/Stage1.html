@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang ="en">
+<head>
+<meta charset="utf-8"/>
+  <title>Intro to Computer Programming</title>
+  <link rel="stylesheet" type="text/css" href="Stage1.css">
+</head>
+<h1>STAGE 1 - WEBPAGES, DOCUMENTS, AND STRUCTURE</h1>
+<div class="lesson">
+  <h2>Lesson 1: Basics of the Web and HTML</h2>
+</div>
+  <div class="concept">
+  HTML - <em>Hypertext Markup Language</em>
+</div>
+  <div class="concept-title">
+  <p>
+  <b>How the Web Works</b>
+  </p>
+    </div>
+    <div>
+<p>
+The web is a bunch of computers that communicate with each other. When a person goes to a web page like <a href=“www.udacity.com”>www.udacity.com</a>, their computer sends request to a server using <em>HTTP protocol</em> via the <em>internet</em>. The <em>server</em> hosts the files and finds the appropriate HTML document. It then sends it back to the user's computer where a web browser interprets the page and displays it on the user's screen.
+    </p>
+  </div>
+<div>
+    <div class="concept-title">
+<b>Major pieces of the web</b>
+  </div>
+ <div>
+<p>
+You<br>
+Your computer running a browser<br>
+The internet<br>
+Servers<br>
+</p>
+</div>
+<div>
+  <div class="concept-title">
+<p>
+<b>HTML documents are the heart of the web</b>
+</p>
+  </div>
+<p>
+Made up of:
+Text content (what you see)<br>
+Markup (what it looks like)<br>
+References to other documents (e.g., images & videos)<br>
+Links to other pages
+</p>
+</div>
+
+<div>
+  <div class="concept-title">
+  <b>Markup (made up of tags)</b>
+</div>
+<p>
+There is an opening tag and a closing tag.<br>
+Element is the whole thing above
+</p>
+</div>
+<div>
+<p>
+<b>Tags</b>
+</p>
+<p>
+If you forget the closing tag, everything after the opening tag takes its instruction.
+</p>
+<p>
+<em>Examples</em><br>
+b=<b>bold</b><br>
+HTML is <b>reasonably straightforward</b>.<br>
+Em - <em>emphasis</em> (italics)<br>
+I <em>really</em> like coding!<br>
+
+img = images<br>
+img src="url" alt="text”<br>
+*text - text that is displayed when the image link is broken<br>
+**images don't have a closing tag - it's a <b>void tag</b>. It has no content so it doesn't need a closing tag.
+</p>
+</div>
+<div>
+<b>HTML ATTRIBUTES</b>
+<p>
+a = Anchor, used for making links<br>
+
+<a> href="www.reddit.com">HTML</a>
+
+HTML would be what shows up as the hyperlink
+</div>
+<div>
+<b>WHITESPACE</b>
+<p>
+All commands run in a string on the same line
+br - line break
+Creates a break with multiple lines.
+</p>
+<p>
+p = Paragraph
+</p>
+</div>
+<div>
+<b>Inline vs Block</b>
+<p>
+HTML elements are either <em>inline</em> or <em>block</em>. Block elements form an "invisible box" around the content inside of them.
+</p>
+<p>
+br is inline<br>
+It breaks a line and creates a new line.<br>
+
+<em>Inline examples:</em><br>
+b; em; img; a; span; br
+</p>
+<p>
+p is block<br>
+It creates an actual (invisible) box around the text.<br>
+
+<em>Block examples:</em><br>
+p; div
+</p>
+<div>
+<b>Span vs Div</b>
+<p>
+These tags contain content<br>
+<em>Span</em> - inline
+<em>Div</em> - block
+</p>
+</div>
+</div>
+<div>
+  <div class="concept-title">
+<p>
+Five important things to take away from this lesson:<br>
+  </div>
+<b>1 - What a Web Page is</b>
+
+<p>
+
+A web page is a text document written in a language called HTML. Web browsers read these documents, and then interpret and display them.
+
+</p>
+<p>
+<b>2 - How Coding Works</b>
+
+<p>
+
+Coding happens when programmers write text in a language that a computer can understand. The computer can then follow the instructions the programmer wrote. For example, the computer might do this by making text like this:
+
+I'm <b>learning</b> to code!
+
+looks like this:
+
+I'm learning to code!
+
+</p>
+<p>
+<b>3 - Computers are Stupid</b><br>
+
+Programmers need to write exactly the way a computer understands (also known as writing with correct "syntax"). <br>
+
+For example, if you forget to close a <b>b</b> tag, the computer won't be able to figure out what you had intended to make bold. This "stupidity" can be very frustrating, but it also gives programmers incredible power: if you know how to talk to a computer than you can tell it do do anything you want.
+
+</p>
+<p>
+<b>4 - Programmers Can't Remember Everything</b><br>
+
+There are too many details to keep everything in your head. And that's okay. If you forget how to make text italic in HTML, you can always just look it up.
+
+</p>
+<p>
+<b>5 - Basic HTML Vocabulary</b><br>
+
+You will be using HTML in the next few lessons, so it will be helpful if you're comfortable with the jargon.
+
+<p>
+
+<p>
+
+<b>Tag</b>: An HTML tag is always contained within angled brackets. Most tags have an opening tag (p for example) and a closing tag, (/p). Some tags (called "void" tags) do not require a closing tag (like the br tag).
+</p>
+
+<p>
+
+<b>Element</b>: An HTML element refers to everything within a set of opening and closing tags.
+</p>
+
+<p>
+
+<b>Attribute</b>: This is a property of an HTML element. For example, to set the href attribute of an anchor tag to the Udacity URL, you would write a href="www.udacity.com”
+</p>
+</div>
+</div>
+
+<div class="lesson">
+<h2>Lesson 2: Creating a Structured Document with HTML</h2>
+  </div>
+  <div class="concept-title">
+<b>A webpage is like a house</b>
+   </div>
+<p>
+<b>HTML files</b> are the <em>structure</em> (where are the walls, which rooms are which)<br>
+<b>CSS files</b> are the <em>style</em> (what decorations are there, what color are the walls)<br>
+<b>Java script</b> (changes elements and behavior, garage door opener)<br>
+</p>
+<p>
+<b>Observing Wikipedia's page & structure:</b>
+</p>
+<p>
+All elements are rectangular<br>
+If you drill down deep enough, you can read the same text as on the page<br>
+BUT, not all elements are visible.<br>
+</p>
+<p>
+<b>Tree Like Structure</b>
+</p>
+<p>
+<em>Sideways triangles</em> = HTML element with opening & closing tags<br>
+Could be text, span, a, etc.
+</p>
+<div>
+<p>
+This <a href=“http://assignments.udacity-extras.appspot.com/courses/html-css/samples/explore.html”>page</a> can be explored in Google Chrome.<br>
+Select 3 lines in upper righthand corner.<br>
+Select More Tools --> Developer Tools<br>
+</p>
+</div>
+  <div class="concept-title">
+<b>Key Concepts</b>
+  </div>
+<p>
+HTML and CSS are both <em>languages</em><br>
+HTML controls the <em>structure</em> of a web page<br>
+CSS controls the <em>style</em> of a page (how it looks).<br>
+When programmers talk about the <b>DOM</b> they are talking about the tree-like structure of a page.<br>
+To learn more about what a "tree-like structure" means, read the first two paragraphs of the <a href=“http://en.wikipedia.org/wiki/Tree_structure”>wikipedia article on Tree Structures.</a>
+
+</p>
+
+<p>
+
+<b>HTML</b> - <em>HyperText Markup Language</em> - the standard markup language used to create web pages.
+
+</p>
+
+<p>
+
+<b>CSS</b> - <em>Cascading Style Sheets</em> - style sheet language used for describing the look and formatting of a document written in a markup language.
+
+</p>
+
+<p>
+
+<b>DOM</b> - <em>Document Object Model</em> - a cross-platform and language-independent convention for representing and interacting with objects in HTML (and other markup languages). The nodes of every document are organized in a tree structure, called the DOM tree.
+
+</p>
+
+Everything is a <em>box</em>.<br>
+Border-radius, if checked creates different shapes (e.g., circle)
+<div>
+  <div class="concept">
+  <div class="concept-title">
+    <b>Benefits of Avoiding Repetition</b>
+  </div>
+  <p>
+    Repetition is doing the same thing over and over again. When the code needs to be changed, it is more prone to errors if those changes need to be replicated in many different places. If the change isn't made in every place errors can arise. Programmers should avoid repetition whenever possible.
+  </p>
+  <p>
+    In CSS, using <b>Inheritance</b> properties for specified elements and its descendants helps reduce the need for repetition. Inheritance allows programmers to write less CSS by preventing certain properties from being repeated over and over again.
+</p>
+</div>
+</div>
+<h1>STAGE 2 - TELLING COMPUTERS WHAT TO DO</H1>
+  <div class="lesson">
+    <h2>Lesson 1 - Intro to Serious Programming</h2>
+</div>
+  <div class="concept">
+  <div class="concept-title">
+  <b>Programming is the core of computer science</b>
+    </div>
+  <p>
+  Useful terms used in the course:<br>
+  1. <b>Computer</b> - Most machines are designed to do only a few things. A computer is a universal machine that can be programmed to do anything we want, any computation; anything that can be imagined and written with a program can be.<br>
+  2. <b>Computer Program</b> - A precise sequence of steps that tells the computer what to do, what steps to take. <b>Precise sequence of steps</b> - the program must have this in order for the computer to understand the instructions.<br>
+  <b>Examples of Computer programs</b> are a web browser, the Python interpreter, calendar app on the phone, games, or mobile apps.<br>
+  3. <b>Programming Languages</b> - What programmers use to tell a computer what to do. Python is an example of a language that the computer understands.
+"The programs you'll write in this class will be Python code. Those will be input to another program which is a Python interpreter that follows the instructions in your code and it does that by following the instruction in its code... and you'll be able to run all that using your web browser."<br>
+  4. <b>Interpreter</b> - Python, takes out program and interprets the program into a format that the computer can.
+</p>
+<div class="concept-title">
+  <b>Why Don't We Use Natural Language to Program Computers?</b>
+</div>
+<p>
+  <b>Ambiquity</b> - natural languages are inherently ambiguous, different people interpret it in different ways. The computer needs to understand the language and interpret it the same way each time.
+  Example - definition of bi-weekly has two different meanings (every other week vs twice a week). If a computer program needed to manage payroll, the term biweekly would need to be clearly defined.
+</p>
+<p>
+  <b>Verbosity</b> - Natural language needs a lot of words to precisely explain things. We need to keep it as streamlined and simple as possible for the computer.
+</p>
+<p>
+  <b>Grammar</b> - Programming language use grammar just like human languages. It specifies what is correct vs incorrect. In spoken language, we can often make sense of what someone istrying to say, even if the grammar is incorrect. Computers cannot do this. The code needs to be precise and correct (according to the Python interpreter) or the code won't work. Print = Python code to print the result of the expression after it.
+<p>
+  <b>SyntaxError</b> - the grammar is not in the programming languageCode must be written with specific syntax. A small type can lead to a big error.
+</p>
+<div class="concept-title">
+  <b>Replacement Grammar</b>
+</div>
+<p>
+  Describes a big language with a "few" precise rules.<br>
+  Backus-Naur form:<br>
+  [non-terminal] -> replacement<br>
+  Keep replacing non-terminals until you end with a terminal = Derivation<br>
+  Derive a sentence<br>
+</p>
+<div class="concept-title">
+  <b>Python Grammar for Arithmetic Expressions</b>
+</div>
+<p>
+  Expression -> Expression Operator Expression (recursive definition - needs at least 2 rules)<br>
+  Expression -> Number<br>
+  Operator -> +<br>
+  Operator -> *<br>
+  Number -> 0,1,2<br>
+  Expression -> (Expression)<br>
+</p>
+<p>
+  <b>Python Expressions</b> - A Python expression is a legal Python statement.
+</p>
+</div>
+<div class="lesson">
+  <h2>Lesson 2 - Variables and Strings</h2>
+</div>
+<div class="concept">
+  <div class="concept-title">
+    <b>Three Main Questions in this Lesson:</b>
+  </div>
+  <p>
+    1. What is a <b>variable</b>?<br>
+    2. What does it mean to <b>assign</b> a value to a variable?<br>
+    3. What is the difference between what the equals (=) means in math versus in programming? What's the difference between this: 2 + 3 = 5  and this: my_variable = 5?<br>
+  </p>
+  <div class="concept-title">
+    <b>VARIABLES</b>
+  </div>
+  <p>
+  Assignment Statement<br>
+  Name = Expression<br>
+  Name can be any sequence of letters or numbers as long as the first space is a letter of an underscore.<br>
+  Variables typically start in lower case, not a rule but a convention.<br>
+</p>
+<p>
+  Example:<br>
+  Speed_of_light = 299792458<br>
+  Billionth = 1.0/1000000000<br>
+  Nanostick = speed_of_light * billionth * 100<br>
+  Print nanostick<br>
+</p>
+<p>
+  A Comment can be shown with a #. Anything after the # will be ignored by the Python interpreter, but it allows us to leave comments within the code (either for yourself or others)
+</P>
+<p>
+By placing a decimal point in a variable, the answer will be provided with a decimal and more precision.
+</p>
+<p>
+Variables can vary. We can change a value.
+After a new assignment, the variable will take on the new value.<br>
+= sign means 'assignment'; think of it like an arrow.
+</p>
+<div class="concept-title">
+  <b>STRINGS</b>
+</div>
+<p>
+  Sequence of characters surrounded by quotes<br>
+  'I am a string!'<br>
+  "I prefer double quotes!"<br>
+  Either single or double quotes work, but they must be consistent. Without quotes, it looks like a variable.<br>
+</p>
+<p>
+  Operator + in strings = concatenation<br>
+  [string] + [string] --> concatenation of the two strings<br>
+  </p>
+<p>
+  Print 'Hello' + name<br>
+  *Will print as HelloCarrie<br>
+  Must add space to 'Hello '<br>
+</p>
+<p>
+  Cannot add strings and numbers together.<br>
+  Can multiply strings and numbers.<br>
+  Print 'Hello ' + name + '!' * 3<br>
+  Hello Carrie!!!<br>
+</p>
+<div class="concept-title">
+  <b>STRING INDEXING</b>
+</div>
+  <p>
+  Extract subsequences from string<br>
+  [string][[expression]<br>
+  'udacity'[0] --> u<br>
+  'udacity'[1 + 1] --> a<br>
+</p>
+<p>
+Name = 'Dave'<br>
+Print name[0]<br>
+Result D<br>
+</p>
+<p>
+Index starts at 0<br>
+If use negative numbers, it counts from the end.<br>
+</p>
+<div class="concept-title">
+  <b>Selecting Sub-Sequences</b>
+</div>
+<p>
+  When expression = a number<br>
+  [string] [[expression] --> one-character string<br>
+  [string] [[expression]:[expression]] --> string that is a subsequence of the characters in s, starting from position start and ending with position stop -1.<br>
+</p>
+<p>
+  <b>Example</b><br>
+Word = 'assume'<br>
+Print word[3] --> u<br>
+Print word[3:4] --> u<br>
+Print word[4:6] --> me<br>
+Print word[4: ] --> me<br>
+Print word[ :2] --> as<br>
+Print word [ : ] --> assume<br>
+</p>
+<p>
+  html_div = "[div]This is some text[/div]"<br>
+div_text = html_div[5:-6]<br>
+</p>
+<p>
+  print div_text
+</p>
+<p>
+  Result -> This is some text<br>
+  <b>Why</b>? First position 5 takes us to [div] and Last position -6 bring us back from the end of [/div]
+</p>
+<div class="concept-title">
+  <b>Finding Strings in Strings</b>
+</div>
+<p>
+[string].find([string])<br>
+  • The out put of Find is the position in the string where the first occurrence of the substring occurs.<br>
+  • If target string is not found then the output will be -1<br>
+</p>
+<div class="concept-title">
+  <b>Parameters</b>
+</div>
+<p>
+  What's a parameter? In this code: "text".find("t") the "t" is a parameter.<br>
+Next, you're going to see code like:"text".find("t", 1) and in this case, there are two parameters, "t" and 1.<br>
+So parameters are what go inside the parentheses.<br>
+</p>
+<p>
+  An <b>edge case</b> in programming is one that doesn't come up very often.
+</p>
+</div>
+</html>
+
+
+
+
+
+
+
+
+
